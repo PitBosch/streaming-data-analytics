@@ -359,7 +359,7 @@ from pattern [
     s=SmokeSensorEvent(smoke=true)
       -> (
     t=TemperatureSensorEvent(temperature>50,sensor=s.sensor)
-    where timer:within(2 seconds) 
+    where timer:within(2 minutes) 
     )
   )  
 ]
